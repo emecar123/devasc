@@ -1,0 +1,134 @@
+data Forma
+XML, JSON, YAML
+
+API's
+=====
+
+SNMP, SOAP, REST, NETCONF, 
+
+Python virtual environments
+============================
+py -3 -m venv py3-venv
+source py3-venv/Scripts/activate
+
+
+py -2 -m pip install virtualenv
+py -2 -m virtualenv py2-venv
+source py2-venv/Scripts/activate
+
+to install library:
+======================
+
+(py3-venv)
+MR EMEKA@ADMIN2017 MINGW64 ~/py3-venv/Scripts
+$ pip install bs4
+
+verify pip installs
+===================
+pip list
+
+
+
+!To verify
+python -V
+
+To Launch Interactive Mode
+py -i
+
+Working with GIT
+======================
+git init   ----------------------(On any folder you want to make a git repo, run this comman)
+git config --global user.email "gicepledges@yahoo.com"
+git config --global user.name "Innocent"
+git ad index.css ----------------or 
+git add *.* ---------------------(to add all file in the folder and to stage)
+git status
+git commit -m "initial commit" --to commit staged files
+git log 
+git log --oneline
+git log --oneline -n 3
+
+git checkout 876c567 - -----------to checkout code at this point
+
+git checkout master --------------- to revert back to former master head point
+git branch Mynewbranch -------------to create new branch
+git branch Mynewbranch 876c567 ------ to create bew branch for former checkout point so as not to loose the change
+git checkout Mynewbranch
+git checkout master
+ git merge Mynewbranch
+git push origin
+
+Cloning repositories
+====================
+git clone https://github.com/CiscoDevNet/dnav3-code
+or
+git clone https://github.com/CiscoDevNet/dne-security-code
+or
+git clone https://github.com/CiscoDevNet/dciv2-code
+
+create and switch to a new branch
+===============================
+cd dnav3-code
+git checkout -b mycode
+
+update local version
+====================
+git fetch
+
+to see what changed
+==================
+git diff
+
+function
+============
+
+def test(parameter):
+  print(parameter)
+test (argument)
+TRY AND EXCEPT
+================
+try:
+    # some statement
+except ErrorName:
+    # some statement
+
+How to Input numbers (Integers and float)
+==========================================
+guess_row = int(input("Guess Row: "))
+guess_row = float(input("Guess Row: "))
+
+Working with Lists
+-===================
+Appending:
+orders = ['daisies', 'periwinkle']
+orders.append('tulips')
+orders = ['daisies', 'periwinkle', 'tulips', 'roses']
+
+Zip
+names = ['Jenny', 'Alexus', 'Sam', 'Grace']
+dogs_names = ['Elphonse', 'Dr. Doggy DDS', 'Carter', 'Ralph']
+names_and_dogs_names = list(zip(names, dogs_names))
+print(names_and_dogs_names)
+
+Range
+list1 = list(range(9))
+print (list1)
+========================
+
+
+Explore Devnet Learning Tracks
+Browse GitHub
+Install Nanao - Change Display Colors
+Change Your Python Prompt
+=============================
+
+json.dumps = converts from python dict to json
+json.load = converts from json to pythn dict
+
+
+Activate Python Virtual Environment
+=====================================
+MR EMEKA@ADMIN2017 MINGW64 ~
+source py3-venv/Scripts/activate
+
+cd py3-venv
