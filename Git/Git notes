@@ -86,3 +86,11 @@ Reverting to last good known commit:
 git reset --hard
 Delete the branch
 $ git branch --delete --force <branch name>
+
+################
+
+Updating the Origin Repository from the local Branch (locBranch)
+
+1. git push https://github.com/emecar123/devasc.git locBranch
+2. Login to Github and approve the pull reyest
+3. Merge the records.
