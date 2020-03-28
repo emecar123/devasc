@@ -1,0 +1,76 @@
+##########
+
+Configuring your details for updates
+Install Git 
+https://git-scm.com/downloads  |- Windows
+
+##############
+
+Initialize Git particulars
+On command prompt or bash terminsal
+
+git config --global user.email "gicepledges@yahoo.com"
+git config --global user.name "Innocent"
+
+###########
+Verify Git information:
+git config --list
+
+###########
+
+Make a folder a git repo
+git init   ----------------------(On any folder you want to make a git repo, run this command)
+or git clone <url>
+
+To check if a folder is has been git initialized / cloned:
+Go into the folder and go to the .git 
+Example:
+
+MR EMEKA@ADMIN2017 MINGW64 ~
+$ cd netprog_basics
+$ cd .git
+$ ls
+config       HEAD    index  logs/     packed-refs
+description  hooks/  info/  objects/  refs/
+
+##############
+
+Add (a) file to be tracked by git (called stahing)
+git add index.css ----------------or 
+git add *.* ---------------------(to add all file in the folder and to stage)
+
+###############
+
+3 steps to updating files
+Make changes to file and save locally (ctrl + s)
+git add <file> 
+git commit -m <"test commit file">   ###where -m stands for message 
+Git push (to publish)
+ 
+ Verify with:
+ 
+ git status
+###############
+
+Check history of commits
+git log 
+git log --oneline
+git log --oneline -n 3
+
+###############
+
+checking out a code that had been saved in history is what the <git checkout> command does. 
+It reverts your code to the state it was at a particular commit
+when a code is checked out the head it is detached meaning that even if they are committed they cannot easily be 
+retrieved once we revert back to the Master branch:
+
+git checkout
+git checkout 876c567 - -----------to checkout code at this point
+git checkout master --------------- to revert back to former master head point
+git branch Mynewbranch -------------to create new branch
+git branch Mynewbranch 876c567 ------ to create bew branch for former checkout point so as not to loose the change
+git checkout Mynewbranch
+git checkout master
+
+
+
