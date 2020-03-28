@@ -50,6 +50,8 @@ Git push (to publish)
  Verify with:
  
  git status
+ git diff
+ 
 ###############
 
 Check history of commits
@@ -72,5 +74,15 @@ git branch Mynewbranch 876c567 ------ to create bew branch for former checkout p
 git checkout Mynewbranch
 git checkout master
 
+################
 
+Keeping your local repository up-to-date
+$ git fetch
 
+#################
+Reverting changes
+git checkout 876c567  - Or just git checkout to go to the head branch.
+Reverting to last good known commit: 
+git reset --hard
+Delete the branch
+$ git branch --delete --force <branch name>
