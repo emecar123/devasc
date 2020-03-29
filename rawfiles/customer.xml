@@ -1,0 +1,10 @@
+<Customers>
+	<Customer type = "Business">
+		<Place>UK</Place>
+		<Amount>15000</Amount>
+	</Customer>
+	<Customer type="Personal">
+		<Place>INDIA</Place>
+		<Amount>2500</Amount>
+	</Customer>
+</Customers>
