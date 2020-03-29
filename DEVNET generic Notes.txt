@@ -4,7 +4,7 @@ XML, JSON, YAML
 API's
 =====
 
-SNMP, SOAP, REST, NETCONF, 
+SNMP, SOAP, REST, NETCONF,
 
 Python virtual environments
 ============================
@@ -40,11 +40,11 @@ Working with GIT
 git init   ----------------------(On any folder you want to make a git repo, run this comman)
 git config --global user.email "gicepledges@yahoo.com"
 git config --global user.name "Innocent"
-git ad index.css ----------------or 
+git ad index.css ----------------or
 git add *.* ---------------------(to add all file in the folder and to stage)
 git status
 git commit -m "initial commit" --to commit staged files
-git log 
+git log
 git log --oneline
 git log --oneline -n 3
 
@@ -132,3 +132,9 @@ MR EMEKA@ADMIN2017 MINGW64 ~
 source py3-venv/Scripts/activate
 
 cd py3-venv
+
+GET
+Post - writes new data to data stores
+PUT - updates data
+Patch - replaces data
+DELETE
