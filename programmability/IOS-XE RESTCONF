@@ -1,0 +1,17 @@
+To see the model implemented by the device:
+Http get on:
+https://{{host}}:{{port}}/restconf/data/netconf-state/capabilities
+
+refernce link (you can clone this)
+https://github.com/YangModels/yang.git
+
+On my local PC this is downloaded here:
+C:\Users\MR EMEKA\py3-venv\devasc\YANG\yang
+
+For standard ietf Modules
+https://github.com/YangModels/yang/standard/ietf/RFC
+
+For Cisco Specific Modules:
+https://github.com/YangM/els/yang/tree/master/vendor/cisco/xe/1671
+
+pyang -f tree devasc/YANG/yang/standard/ietf/RFC/ietf-interface.yang

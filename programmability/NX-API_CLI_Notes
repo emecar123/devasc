@@ -1,0 +1,43 @@
+This is the older NX-API which came originally with the NX-OS
+
+Everything is a POST via http. There is no GET
+NO REST API
+
+How to enable
+==============
+config t
+feature nxapi
+nxapi sandbox
+copy run start
+==============
+
+LOGIN
+=====
+https://sbx-nxos-mgmt.cisco.com/
+admin
+Admin_1234!
+
+API = "https:/ip address/ins"
+e.g. "https://sbx-nxos-mgmt.cisco.com/ins"
+
+INPUT -  can be a JSON(or JSON RPC) payload with native CLI input e.g.
+json - Content type = application/Json
+json-rpc - Content type - application/json-rpc
+=======Sample Json Input ==============
+{
+  "ins_api": {
+    "version": "1.0",
+    "type": "cli_show",
+    "chunk": "0",
+    "sid": "1",
+    "input": "sh ip int bri",
+    "output_format": "json"
+  }
+}
+
+RESPONSE - is in json format
+========
+
+CLI Show - Gives a structures data as RESPONSE
+CLI_show_ascii - Gives an unstructured flat line response
+CLI_CONF - enables config t in the background so you can POST configuration commands.
