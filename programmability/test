@@ -1,0 +1,124 @@
+
+with message format json
+{
+  "ins_api": {
+    "type": "cli_show",
+    "version": "1.0",
+    "sid": "eoc",
+    "outputs": {
+      "output": {
+        "input": "sh ip int bri",
+        "msg": "Success",
+        "code": "200",
+        "body": {
+          "TABLE_intf": {
+            "ROW_intf": [
+              {
+                "vrf-name-out": "default",
+                "intf-name": "Vlan100",
+                "proto-state": "up",
+                "link-state": "up",
+                "admin-state": "up",
+                "iod": 7,
+                "prefix": "172.16.100.1",
+                "ip-disabled": "FALSE"
+              },
+              {
+                "vrf-name-out": "default",
+                "intf-name": "Vlan101",
+                "proto-state": "up",
+                "link-state": "up",
+                "admin-state": "up",
+                "iod": 6,
+                "prefix": "172.16.101.1",
+                "ip-disabled": "FALSE"
+              },
+              {
+                "vrf-name-out": "default",
+                "intf-name": "Vlan102",
+                "proto-state": "up",
+                "link-state": "up",
+                "admin-state": "up",
+                "iod": 5,
+                "prefix": "172.16.102.1",
+                "ip-disabled": "FALSE"
+              },
+              {
+                "vrf-name-out": "default",
+                "intf-name": "Vlan103",
+                "proto-state": "up",
+                "link-state": "up",
+                "admin-state": "up",
+                "iod": 4,
+                "prefix": "172.16.103.1",
+                "ip-disabled": "FALSE"
+              },
+              {
+                "vrf-name-out": "default",
+                "intf-name": "Vlan104",
+                "proto-state": "up",
+                "link-state": "up",
+                "admin-state": "up",
+                "iod": 3,
+                "prefix": "172.16.104.1",
+                "ip-disabled": "FALSE"
+              },
+              {
+                "vrf-name-out": "default",
+                "intf-name": "Vlan105",
+                "proto-state": "up",
+                "link-state": "up",
+                "admin-state": "up",
+                "iod": 2,
+                "prefix": "172.16.105.1",
+                "ip-disabled": "FALSE"
+              },
+              {
+                "vrf-name-out": "default",
+                "intf-name": "Lo1",
+                "proto-state": "up",
+                "link-state": "up",
+                "admin-state": "up",
+                "iod": 13,
+                "prefix": "172.16.0.1",
+                "ip-disabled": "FALSE"
+              },
+              {
+                "vrf-name-out": "default",
+                "intf-name": "Lo98",
+                "proto-state": "up",
+                "link-state": "up",
+                "admin-state": "up",
+                "iod": 144,
+                "prefix": "10.98.98.1",
+                "ip-disabled": "FALSE"
+              },
+              {
+                "vrf-name-out": "default",
+                "intf-name": "Lo99",
+                "proto-state": "up",
+                "link-state": "up",
+                "admin-state": "up",
+                "iod": 143,
+                "prefix": "10.99.99.1",
+                "ip-disabled": "FALSE"
+              },
+              {
+                "vrf-name-out": "default",
+                "intf-name": "Eth1/5",
+                "proto-state": "up",
+                "link-state": "up",
+                "admin-state": "up",
+                "iod": 18,
+                "prefix": "172.16.1.1",
+                "ip-disabled": "FALSE"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
+Copy
+Copyright © 2014-2016 Cisco Systems, Inc. All rights reserved.
