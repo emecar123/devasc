@@ -1,0 +1,48 @@
+How to enable
+==============
+config t
+feature nxapi
+nxapi sandbox
+copy run start
+==============
+
+LOGIN
+=====
+"https:/ip address/visore.html"
+"https://sbx-nxos-mgmt.cisco.com/visore.html"
+admin
+Admin_1234!
+
+Exploring Management information Tree
+========================================
+1. developer.cisco.com/site/nxapi-dme-model-reference-api
+2. Visore - "https:/ip address/visore.html
+3, Uses the concept of Class and Managed objects similar to container and leaf in Yang.
+   Visore Works only with NX-9000
+
+      Navigate to the class or specific managed object (mo)
+      Click on the 'Display URI of last query'
+      Delete the txt from the ,xme portion and replace with .json
+      example:
+      /api/node/mo/sys/bd/bd-[vlan-1].xml?query-target=self
+      change to
+      /api/node/mo/sys/bd/bd-[vlan-1].json
+
+      /api/node/class/l2BD.xml?
+      change to
+      /api/node/class/l2BD.json?
+
+Get Token
+API = "https:/ip address/api/aaaLogin.json"
+e.g. "https://sbx-nxos-mgmt.cisco.com/api/aaaLogin.json"
+Get Token Body: {
+  "aaaUser": {
+    "attributes": {
+      "name": "{{username}}",
+      "pwd": "{{password}}"
+    }
+  }
+}
+
+Consume the API by scripting. See:
+C:\Users\MR EMEKA\py3-venv\devasc\programmability\NX-API-REST1.py
